@@ -1,2 +1,2 @@
 echo "Hello Jenkins"
-echo "Test check run"
+echo "Test check run!"
