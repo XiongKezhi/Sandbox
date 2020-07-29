@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd-cpd>
+   <duplication lines="12" tokens="94">
+      <file column="43" endcolumn="24" endline="31" line="20"
+            path="/Users/kezhi/dev/jenkins/checks-api-plugin/src/test/java/io/jenkins/plugins/checks/api/ChecksOutputTest.java"/>
+      <file column="38" endcolumn="24" endline="79" line="68"
+            path="/Users/kezhi/dev/jenkins/checks-api-plugin/src/test/java/io/jenkins/plugins/checks/api/ChecksOutputTest.java"/>
+      <codefragment><![CDATA[    void shouldBuildCorrectlyWithAllFields() {
+        final List<ChecksAnnotation> annotations = createAnnotations();
+        final List<ChecksImage> images = createImages();
+        final ChecksOutput checksOutput = new ChecksOutputBuilder()
+                .withTitle(TITLE)
+                .withSummary(SUMMARY)
+                .withText(TEXT)
+                .withAnnotations(annotations.subList(0, 1))
+                .addAnnotation(annotations.get(1))
+                .withImages(images.subList(0, 1))
+                .addImage(images.get(1))
+                .build();]]></codefragment>
+   </duplication>
+   <duplication lines="9" tokens="89">
+      <file column="30" endcolumn="5" endline="43" line="35"
+            path="/Users/kezhi/dev/jenkins/checks-api-plugin/src/test/java/io/jenkins/plugins/checks/api/ChecksAnnotationTest.java"/>
+      <file column="26" endcolumn="5" endline="78" line="69"
+            path="/Users/kezhi/dev/jenkins/checks-api-plugin/src/test/java/io/jenkins/plugins/checks/api/ChecksAnnotationTest.java"/>
+      <codefragment><![CDATA[        assertThat(annotation)
+                .hasPath(Optional.of(PATH))
+                .hasStartLine(Optional.of(20)).hasEndLine(Optional.of(20))
+                .hasAnnotationLevel(ChecksAnnotationLevel.NOTICE)
+                .hasMessage(Optional.of(MESSAGE))
+                .hasStartColumn(Optional.of(33)).hasEndColumn(Optional.of(38))
+                .hasTitle(Optional.of(TITLE))
+                .hasRawDetails(Optional.of(RAW_DETAILS));
+    }]]></codefragment>
+   </duplication>
+   <duplication lines="10" tokens="62">
+      <file column="43" endcolumn="24" endline="33" line="24"
+            path="/Users/kezhi/dev/jenkins/checks-api-plugin/src/test/java/io/jenkins/plugins/checks/api/ChecksAnnotationTest.java"/>
+      <file column="38" endcolumn="24" endline="66" line="57"
+            path="/Users/kezhi/dev/jenkins/checks-api-plugin/src/test/java/io/jenkins/plugins/checks/api/ChecksAnnotationTest.java"/>
+      <codefragment><![CDATA[    void shouldBuildCorrectlyWithAllFields() {
+        final ChecksAnnotation annotation = new ChecksAnnotationBuilder()
+                .withPath(PATH)
+                .withStartLine(20).withEndLine(20)
+                .withAnnotationLevel(ChecksAnnotationLevel.NOTICE)
+                .withMessage(MESSAGE)
+                .withStartColumn(33).withEndColumn(38)
+                .withTitle(TITLE)
+                .withRawDetails(RAW_DETAILS)
+                .build();]]></codefragment>
+   </duplication>
+</pmd-cpd>
