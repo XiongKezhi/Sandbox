@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Built-By: kezhi
+Created-By: Apache Maven
+Build-Jdk: 1.8.0_262
+Extension-Name: checks-api
+Specification-Title: Defines an API for Jenkins to publish checks to S
+ CM platforms.
+Implementation-Title: checks-api
+Implementation-Version: 0.1.1-SNAPSHOT
+Group-Id: io.jenkins.plugins
+Short-Name: checks-api
+Long-Name: Checks API plugin
+Url: https://github.com/jenkinsci/checks-api-plugin
+Minimum-Java-Version: 1.8
+Plugin-Version: 0.1.1-SNAPSHOT (private-2fb0478e-kezhi)
+Hudson-Version: 2.204.4
+Jenkins-Version: 2.204.4
+Plugin-Dependencies: plugin-util-api:1.2.2
+Plugin-Developers: Ullrich Hafner:uhafner:ullrich.hafner@gmail.com
+Plugin-License-Name: MIT License
+Plugin-License-Url: https://opensource.org/licenses/MIT
+Plugin-ScmUrl: https://github.com/jenkinsci/checks-api-plugin
+
